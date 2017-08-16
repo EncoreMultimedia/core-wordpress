@@ -1,0 +1,39 @@
+{
+  "name": "wodby/wordpress-composer",
+  "description": "Project template for WordPress projects with composer",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Johnny Martin"
+    }
+  ],
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal-composer/preserve-paths": "0.1.*",
+    "johnpbloch/wordpress-core-installer": "^1.0",
+    "johnpbloch/wordpress-core": "dev-master",
+    "wpackagist-plugin/wp-cfm": "^1.4.5",
+    "roots/wp-password-bcrypt": "^1.0.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "preserve-paths": [
+    ],
+    "wordpress-install-dir": "web"
+  }
+}
