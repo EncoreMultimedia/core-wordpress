@@ -28,6 +28,7 @@
     "roots/wp-password-bcrypt": "^1.0.0"
   },
   "extra": {
+    "wordpress-install-dir": "web/wp",
     "installer-paths": {
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
