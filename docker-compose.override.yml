@@ -1,6 +1,9 @@
 version: "2"
 
 services:
-  wordpress:
+  phpfpm:
     volumes:
-      - ./web:/var/www/html
+      - "./:/var/www/html"
+  nginx:
+    volumes:
+      - "./:/var/www/html"

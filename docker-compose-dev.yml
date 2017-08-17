@@ -1,7 +1,10 @@
 version: "2"
 
 services:
-  wordpress:
+  nginx:
+    volumes:
+      - EncoreWP:/var/www/html:nocopy # Replace volume to this to use docker-sync for macOS users
+  phpfpm:
     volumes:
       - EncoreWP:/var/www/html:nocopy # Replace volume to this to use docker-sync for macOS users
 
