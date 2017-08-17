@@ -14,7 +14,7 @@ services:
   phpfpm:
     image: 10up/phpfpm
     depends_on:
-      - mysql
+      - mariadb
     volumes:
       - "./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini"
       - "./docker/php-fpm/docker-php-ext-xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini"
@@ -41,11 +41,7 @@ services:
     ports:
       - ${PHPMYADMIN_PORT}
 
-  mailcatcher:
-    image: schickling/mailcatcher
-    restart: always
+  mailhog:
+    image: mailhog/mailhog
     ports:
-      - "1025:1025"
-      - "1080:1080"
-    environment:
-      MAILCATCHER_PORT: 1025
+      - ${MAILHOG_PORT}
