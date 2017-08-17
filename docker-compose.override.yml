@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  wordpress:
+    volumes:
+      - ./web:/var/www/html

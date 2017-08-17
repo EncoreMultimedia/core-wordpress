@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  wordpress:
+    volumes:
+      - EncoreWP:/var/www/html:nocopy # Replace volume to this to use docker-sync for macOS users
+
+volumes:
+  EncoreWP:
+    external: true
