@@ -25,7 +25,8 @@
     "johnpbloch/wordpress-core-installer": ">=1.0",
     "johnpbloch/wordpress-core": "dev-master",
     "wpackagist-plugin/wp-cfm": ">=1.4.5",
-    "roots/wp-password-bcrypt": ">=1.0.0"
+    "roots/wp-password-bcrypt": ">=1.0.0",
+    "wpackagist-theme/twentyseventeen": "^1.1"
   },
   "extra": {
     "installer-paths": {
