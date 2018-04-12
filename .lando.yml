@@ -1,0 +1,22 @@
+name: corewp
+recipe: wordpress
+config:
+  php: '5.6'
+  via: nginx
+  webroot: web
+  xdebug: true
+  conf:
+    server: config/nginx/default.conf
+    php: config/php/php.ini
+
+proxy:
+  mailhog:
+    - mail.corewp.lndo.site
+
+# Mailhog things
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true

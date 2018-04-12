@@ -35,13 +35,13 @@ if ( isset( $_SERVER['HTTP_USER_AGENT_HTTPS'] ) && $_SERVER['HTTP_USER_AGENT_HTT
 }
 $site_url = $scheme . '://' . $_SERVER['HTTP_HOST'] . '/';
 define( 'WP_HOME', $site_url );
-define( 'WP_SITEURL', $site_url . 'wp/' );
+define( 'WP_SITEURL', $site_url);
 
 /*
 * Define wp-content directory outside of WordPress core directory
 */
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
+define( 'WP_CONTENT_URL', WP_HOME . 'wp-content' );
 
 /**
  * Composer modifications
@@ -63,7 +63,7 @@ define( 'DB_USER', 'wordpress');
 define( 'DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define( 'DB_HOST', 'mariadb');
+define( 'DB_HOST', 'database');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

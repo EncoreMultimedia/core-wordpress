@@ -1,9 +1,0 @@
-version: "2"
-
-services:
-  phpfpm:
-    volumes:
-      - "./:/var/www/html"
-  nginx:
-    volumes:
-      - "./:/var/www/html"

@@ -6,7 +6,6 @@ vendor/
 ###########
 !web/
 web/*
-!web/index.php
 !web/wp-cli.yml
 !web/wp-content/
 web/wp-content/*
@@ -24,6 +23,7 @@ web/wp-content/themes/*
 !.gitignore
 !.env-sample
 !.travis.yml
+!.lando.yml
 
 # NPM Modules #
 ###############
