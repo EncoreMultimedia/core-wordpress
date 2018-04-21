@@ -13,8 +13,10 @@ proxy:
   mailhog:
     - mail.corewp.lndo.site
 
-# Mailhog things
 services:
+  database:
+    type: mariadb # mysql docker image isn't great
+
   mailhog:
     type: mailhog
     hogfrom:
