@@ -14,6 +14,10 @@ proxy:
     - mail.corewp.lndo.site
 
 services:
+  appserver:
+    run:
+      - "cd $LANDO_MOUNT && composer install"
+
   database:
     type: mariadb # mysql docker image isn't great
 
