@@ -1,36 +1,29 @@
-# Composer Vendor Directory #
-#############################
+# Composer Vendor Directory
 vendor/
 
-# Webroot #
-###########
-!web/
-web/*
-!web/wp-cli.yml
-!web/wp-content/
-web/wp-content/*
-!web/wp-content/mu-plugins/
-web/wp-content/mu-plugins/*
-!web/wp-content/plugins/
-web/wp-content/plugins/*
-!web/wp-content/themes
-web/wp-content/themes/*
-!web/wp-content/themes/twentyseventeen-child/
+# WP Core
+web/wp
+web/.htaccess
 
-# Hidden Files #
-################
+# Application
+web/app/plugins/*
+web/app/mu-plugins/*/
+!web/app/mu-plugins/*.php
+web/app/upgrade
+web/app/uploads/
+
+# Hidden Files
 .*
+!.editorconfig
+!.env.example
 !.gitignore
-!.env-sample
-!.travis.yml
+!.gitkeep
 !.lando.yml
 
-# NPM Modules #
-###############
+# NPM Modules
 node_modules/
 
-# Packages #
-############
+# Packages
 *.7z
 *.dmg
 *.gz
@@ -42,31 +35,26 @@ node_modules/
 *.zip
 *.tgz
 
-# Logs and databases #
-######################
+# Logs and databases
 *.log
 *.sql
+error_log
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
 ._*
 
-# Vim generated files #
-######################
+# Vim generated files
 *.un~
 
-# SASS #
-##########
+# Sass
 .sass-cache
 
-# PHP Storm #
-#############
+# PHP Storm
 .idea
 
-# VSCode #
-#############
+# VSCode
 .vscode
