@@ -7,6 +7,12 @@
  * @package WordPress
  */
 
+define('ENVIRONMENTS', serialize([
+  'development' => 'http://corewp.lndo.site/',
+  'staging'     => 'http://corewp.lndo.site/',
+  'production'  => 'http://corewp.lndo.site/',
+]));
+
 /** @var string Directory containing all of the site's files */
 $root_dir = dirname(dirname(__DIR__));
 

@@ -29,6 +29,7 @@
     "johnpbloch/wordpress": "^4.9",
     "oscarotero/env": "^1.1",
     "roots/wp-password-bcrypt": "^1.0",
+    "roots/wp-stage-switcher": "^2.0",
     "vlucas/phpdotenv": "^2.4",
     "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^2.0",
     "wpackagist-plugin/adminimize": "^1.11.4",
