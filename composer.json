@@ -51,6 +51,10 @@
     "wpackagist-plugin/wp-retina-2x": "^5.2.3",
     "wpackagist-plugin/wp-smartcrop": "^1.4.7"
   },
+  "scripts": {
+    "pre-update-cmd": "mv web/wp/wordfence-waf.php web/",
+    "post-update-cmd": "mv web/wordfence-waf.php web/wp/"
+  },
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],

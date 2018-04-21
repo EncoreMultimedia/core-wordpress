@@ -6,11 +6,9 @@ web/wp
 web/.htaccess
 
 # Application
-web/app/plugins/*
-web/app/mu-plugins/*/
-!web/app/mu-plugins/*.php
-web/app/upgrade
-web/app/uploads/
+web/app/*
+!web/app/mu-plugins
+!web/app/themes
 
 # Hidden Files
 .*
