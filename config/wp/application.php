@@ -114,14 +114,6 @@ define('NONCE_SALT', env('NONCE_SALT'));
  */
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
-/**
- * Custom Settings
- */
-define('AUTOMATIC_UPDATER_DISABLED', true);
-define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
-define('DISALLOW_FILE_EDIT', true);
-define('DISALLOW_FILE_MODS', true);
-
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
