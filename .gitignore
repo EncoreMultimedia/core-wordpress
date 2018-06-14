@@ -8,7 +8,12 @@ web/.htaccess
 # Application
 web/app/*
 !web/app/mu-plugins
+!web/app/plugins
 !web/app/themes
+
+# Custom/Premium Plugins
+web/app/plugins/*
+# !web/app/plugins/custom-plugin-name
 
 # Hidden Files
 .*
@@ -41,7 +46,6 @@ error_log
 # OS generated files
 .DS_Store*
 ehthumbs.db
-Icon?
 Thumbs.db
 ._*
 

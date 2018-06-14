@@ -4,7 +4,6 @@ After cloning, run:
 
 ```bash
 lando start
-lando composer install
 cp .env.example .env
 ```
 and go to http://corewp.lndo.site/ to complete the WordPress installation.
