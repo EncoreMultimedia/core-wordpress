@@ -53,8 +53,8 @@
     "wpackagist-plugin/wp-smartcrop": "^1.4.7"
   },
   "scripts": {
-    "pre-install-cmd": "mv web/wp/wordfence-waf.php web/",
-    "post-install-cmd": "mv web/wordfence-waf.php web/wp/"
+    "pre-install-cmd": "mv web/wp/wordfence-waf.php web/ || exit 0",
+    "post-install-cmd": "mv web/wordfence-waf.php web/wp/ || exit 0"
   },
   "extra": {
     "installer-paths": {
