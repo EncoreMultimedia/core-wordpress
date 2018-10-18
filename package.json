@@ -1,0 +1,8 @@
+{
+  "name": "core-wordpress",
+  "scripts": {
+    "install": "cd web/app/themes/encore-sage && yarn",
+    "start": "cd web/app/themes/encore-sage && yarn start",
+    "build": "cd web/app/themes/encore-sage && yarn build"
+  }
+}
