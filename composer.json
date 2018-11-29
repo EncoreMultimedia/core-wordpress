@@ -36,12 +36,15 @@
     "wpackagist-plugin/ewww-image-optimizer": "^4.1",
     "wpackagist-plugin/google-sitemap-generator": "^4.0.7",
     "wpackagist-plugin/mainwp-child": "^3.4.8",
-    "wpackagist-plugin/nginx-helper": "^1.9.11",
+	"wpackagist-plugin/members": "^2.1.0",
+	"wpackagist-plugin/members-role-hierarchy": "^1.0.0",
+    "wpackagist-plugin/nginx-helper": "^2.0.0",
     "wpackagist-plugin/safe-svg": "^1.6.1",
     "wpackagist-plugin/tinymce-advanced": "^4.6.7",
     "wpackagist-plugin/wordfence": "^7.0",
     "wpackagist-plugin/wp-retina-2x": "^5.2.3",
-    "wpackagist-plugin/wp-statistics": "^12.4"
+    "wpackagist-plugin/wp-statistics": "^12.4",
+	"wpackagist-plugin/wp-user-profiles": "^2.1.0"
   },
   "suggest": {
     "wpackagist-plugin/adminimize": "^1.11.4; Allows admin to control what admin menu items are visible to certain users/roles",
@@ -51,7 +54,6 @@
     "wpackagist-plugin/duplicate-post": "^3.2; adds the ability to clone posts/pages/etc.",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3.2; adds a dashboard widget showing a chart from GA and links to it",
     "wpackagist-plugin/jetpack": "^6.2; Automattic's catch-all do-everything plugin",
-    "wpackagist-plugin/user-role-editor": "^4.40; allows editing of role permissions and addition of new roles",
     "wpackagist-plugin/user-switching": "^1.4.0; lets admins impersonate another user account",
     "wpackagist-plugin/wp-cfm": "^1.4.5; lets you copy configuration to/from the filesystem; similar to Drupal Features",
     "wpackagist-plugin/wp-smartcrop": "^1.4.7; basically focal point"
