@@ -16,7 +16,7 @@ proxy:
 services:
   appserver:
     run:
-      - "cd $LANDO_MOUNT && composer install"
+      - composer install
 
   database:
     type: mariadb # mysql docker image isn't great
