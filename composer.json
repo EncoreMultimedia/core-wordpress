@@ -1,8 +1,8 @@
 {
-  "name": "EncoreMultimedia/core-wordpress",
+  "name": "encoremultimedia/core-wordpress",
   "description": "Project template for WordPress projects with composer",
   "type": "project",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Johnny Martin"
@@ -27,7 +27,7 @@
   "require": {
     "php": ">=5.6",
     "composer/installers": "^1.5",
-	"johnpbloch/wordpress": "^4.9",
+	"roots/wordpress": "^4.9",
 	"inpsyde/wonolog": "^1.0",
     "oscarotero/env": "^1.1",
     "roots/wp-password-bcrypt": "^1.0",
